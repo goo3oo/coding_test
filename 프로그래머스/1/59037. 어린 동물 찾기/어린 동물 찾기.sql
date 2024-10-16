@@ -1,2 +1,5 @@
 -- 코드를 입력하세요
-SELECT
+SELECT animal_id, name
+FROM animal_ins
+WHERE INTAKE_CONDITION<>'Aged'
+ORDER BY 1
