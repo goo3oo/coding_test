@@ -1,14 +1,11 @@
 class Solution {
     public int solution(int[] numbers) {
-        int answer = 0;
-        int totalNumeral = 45;
-        int totalNumbers = 0;
+        int answer = 45;
         
         for(int num : numbers ) {
-            totalNumbers += num;
+            answer -=num;
         };
         
-        answer = totalNumeral - totalNumbers;
         return answer;
     }
 }
