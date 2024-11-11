@@ -1,0 +1,4 @@
+SELECT i.ANIMAL_ID,i.ANIMAL_TYPE, i.name
+FROM ANIMAL_INS i inner join ANIMAL_OUTS o on i.ANIMAL_ID = o.ANIMAL_ID
+WHERE i.SEX_UPON_INTAKE like '%Intact%'
+AND o.SEX_UPON_OUTCOME not like '%Intact%'
