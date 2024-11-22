@@ -1,0 +1,7 @@
+SELECT c.car_id
+FROM CAR_RENTAL_COMPANY_CAR c inner join CAR_RENTAL_COMPANY_RENTAL_HISTORY h 
+on c.CAR_ID = h.CAR_ID
+WHERE c.car_type = '세단'
+AND DATE_FORMAT(START_DATE, '%Y-%m-%d') > '2022-09-30'
+GROUP BY car_id
+ORDER BY car_id DESC
